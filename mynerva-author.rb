@@ -5,20 +5,20 @@
 class MynervaAuthor < Formula
   desc ""
   homepage ""
-  version "0.0.5"
+  version "0.0.6"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/mynerva-io/author-cli/releases/download/v0.0.5/mynerva-author_0.0.5_Darwin_x86_64.tar.gz"
-    sha256 "f0bb9507fc68efe65b2e8eaed168466b8e30081e7418d7f18d10806ab53d76ab"
+    url "https://github.com/mynerva-io/author-cli/releases/download/v0.0.6/mynerva-author_0.0.6_macos_amd64.tar.gz"
+    sha256 "d43a27a583861e5d2d3dec6c11c3863b4f4f05c1d85a4a98e01e118d08a27474"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/mynerva-io/author-cli/releases/download/v0.0.5/mynerva-author_0.0.5_Linux_x86_64.tar.gz"
-    sha256 "8584c661f903e07fc5ff38c65bec36b6d706b3433163e68c8e4f92d3c283c64d"
+    url "https://github.com/mynerva-io/author-cli/releases/download/v0.0.6/mynerva-author_0.0.6_linux_amd64.tar.gz"
+    sha256 "3cc2750c8a9574ff100eb017f40e86a0000a2fc1b4982f3105fb4c4a26a859a1"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/mynerva-io/author-cli/releases/download/v0.0.5/mynerva-author_0.0.5_Linux_arm64.tar.gz"
-    sha256 "c84040b6374b38d0d6f069b1a6b3348a157e5ef5192777228e5f059a9d9ee639"
+    url "https://github.com/mynerva-io/author-cli/releases/download/v0.0.6/mynerva-author_0.0.6_linux_arm64.tar.gz"
+    sha256 "a8e8662905a375c5275fc22809919d11c8f7c2fa91c7def1743f41eae66b5cf2"
   end
 
   def install
